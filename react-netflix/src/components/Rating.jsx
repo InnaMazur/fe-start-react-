@@ -1,21 +1,24 @@
 import React from 'react';
-
+import starFild from '../assets/starFild.png';
+import starLine from '../assets/starLine.png';
 const Rating = () => {
+
+
     return (
        <>
-       {/* <div class="star">
-    <div class="filled-star">
-        <img src="img/carbon_star-filled (2).png" alt="filled-star">
-        <img src="img/carbon_star-filled (2).png" alt="filled-star">
-         <img src="img/carbon_star-filled (2).png" alt="filled-star">
+       <div className="star" style={{display: 'flex', alignItems: 'center', marginBottom:'40px'}}>
+    <div className="filledStar" style={{marginRight:'17px'}}>
+        <img src={starFild} alt="starFild"/>
+        <img src={starFild} alt="starFild"/>
+        <img src={starFild} alt="starFild"/>
          
     </div>
-    <div class="line-star">
-        <img src="img/clarity_star-line.png" alt="line-star">
-        <img src="img/clarity_star-line.png" alt="line-star">
+    <div className="lineStar" style={{marginRight:'17px'}} >
+        <img src={starLine} alt="starLine"/>
+        <img src={starLine} alt="starLine"/>
     </div>
 
-</div> */}
+</div>
 </>
     );
 };

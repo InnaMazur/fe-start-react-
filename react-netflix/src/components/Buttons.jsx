@@ -1,13 +1,32 @@
 import React from 'react';
+import style from './Buttons.module.css';
+import buttonarrow from '../assets/buttonarrow.png';
+function Buttons(props){
 
-const Buttons = () => {
+    const episodes={
+width: '271px',
+height:' 64px',
+color:' rgb(255, 255, 255)',
+fontFamily: 'Inter',
+fontSize: '22px',
+fontWeight:' 500',
+lineHeight: '141.52%',
+letterSpacing: '0%',
+marginLeft: '90px',
+background: 'grey',
+boxSizing:' border-box',
+border: '3px solid rgb(255, 255, 255)',
+borderRadius: '10px',
+
+
+    }
     return (
-        <div className="buttons">
-        <button className="stream">
+        <div className="buttons" style={{display: 'flex', marginBottom:'45px'}}>
+        <button className={style.stream}>
             STREAM NOW
-            <i className="fa-solid fa-circle-play"></i> 
+           <img src={buttonarrow}alt="arrow" />
         </button>
-        <button className="episodes">
+        <button style={episodes}>
             ALL EPISODES
         </button>
     </div>
