@@ -1,4 +1,5 @@
 import React from 'react';
+import NetflixComponent from './NetflixComponent.jsx';
 
 const Footer = () => {
     const  age= {
@@ -7,7 +8,6 @@ const Footer = () => {
         right:'0',
         backgroundColor: 'gray',
         borderLeft: '33px solid red',
-   
         paddingTop:'15px',
         paddingLeft:'26px',
         color: 'white',
@@ -23,6 +23,10 @@ const Footer = () => {
    <div style={age}>
         16+
     </div>
+    {/* <div style={age}>
+        <NetflixComponent ages='18+'></NetflixComponent>
+    </div> */}
+ 
         </footer>
      
     );

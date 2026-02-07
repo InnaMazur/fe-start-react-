@@ -2,7 +2,10 @@ import React from 'react';
 import logo from '../assets/logo.png';
 import avatar from '../assets/avatar.png';
 import search from '../assets/search.svg';
+import NetflixComponent from './NetflixComponent.jsx';
+import TrueFalse from './TrueFalse.jsx';
 const Header = () => {
+    let textValue='About page';
     const headerLeft = {
         display: 'flex',
         alignItems:'center', 
@@ -21,9 +24,6 @@ const Header = () => {
         fontWeight: '400',
         fontStyle: 'normal',
     }
- 
-
-
 
     return (
         <>
@@ -34,6 +34,16 @@ const Header = () => {
             <span style={date}>
                 Friday July 8th
             </span>
+            
+{/*        
+          <span style={date}>
+          <NetflixComponent text='Hello date'></NetflixComponent>
+          </span> */}
+     
+     {/* <span style={date}>
+          <NetflixComponent text={textValue}></NetflixComponent>
+          </span> */}
+          
         </div>
         
             <div className="headerRigh">
@@ -41,7 +51,9 @@ const Header = () => {
                    
                     <img src={search} alt="search" />
                 </button>
-                <img src={avatar} alt="avatar"  width="74" height="74"  />
+                {/* <img src={avatar} alt="avatar"  width="74" height="74"  /> */}
+                {/* <TrueFalse></TrueFalse> */}
+                <TrueFalse isLogin={true}></TrueFalse>
                 
             </div>
                 </div>
