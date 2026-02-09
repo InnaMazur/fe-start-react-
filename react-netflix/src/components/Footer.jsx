@@ -18,11 +18,12 @@ const Footer = () => {
         textAlign:'left',
         // alignItems:'center',
     }
+
     return (
         <footer>
-   <div style={age}>
+   <bdiv style={age}>
         16+
-    </div>
+    </bdiv>
     {/* <div style={age}>
         <NetflixComponent ages='18+'></NetflixComponent>
     </div> */}

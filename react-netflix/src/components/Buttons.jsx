@@ -13,20 +13,22 @@ fontWeight:' 500',
 lineHeight: '141.52%',
 letterSpacing: '0%',
 marginLeft: '90px',
-background: 'grey',
+background: 'transparent',
 boxSizing:' border-box',
 border: '3px solid rgb(255, 255, 255)',
 borderRadius: '10px',
-
-
     }
+    const callAlert=()=>{
+        alert('Chose any episode');
+    }
+    
     return (
         <div className="buttons" style={{display: 'flex', marginBottom:'45px'}}>
         <button className={style.stream}>
             STREAM NOW
            <img src={buttonarrow}alt="arrow" />
         </button>
-        <button style={episodes}>
+        <button onClick={callAlert} style={episodes}>
             ALL EPISODES
         </button>
     </div>

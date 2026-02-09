@@ -9,6 +9,12 @@ NetflixComponent.propTypes = {
     season: PropTypes.string,
     description: PropTypes.string,
     ages: PropTypes.string,
+      genreValue:PropTypes.arrayOf(
+        PropTypes.shape({
+            value:PropTypes.string,
+            link:PropTypes.string
+        })
+    )
 };
 NetflixComponent.defaultProps = {
     text: 'Default Text',
@@ -18,6 +24,7 @@ NetflixComponent.defaultProps = {
     season: 'Default Episodes',
     description: 'Default Description',
     ages: 'Default Age',
+    genreValue:[],
 };
 function NetflixComponent(props) {
     return (
@@ -48,5 +55,6 @@ function NetflixComponent(props) {
 
     );
 }
+
 
 export default NetflixComponent;
