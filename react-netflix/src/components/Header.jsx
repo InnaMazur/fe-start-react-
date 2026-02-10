@@ -1,9 +1,10 @@
-import React from 'react';
+import React  from 'react';
 import logo from '../assets/logo.png';
 import avatar from '../assets/avatar.png';
 import search from '../assets/search.svg';
 import NetflixComponent from './NetflixComponent.jsx';
 import TrueFalse from './TrueFalse.jsx';
+import {useState} from 'react';
 const Header = () => {
     let textValue='About page';
     const headerLeft = {
@@ -24,7 +25,14 @@ const Header = () => {
         fontWeight: '400',
         fontStyle: 'normal',
     }
-
+  
+    const [show,setShow]=useState(false)
+    const [text,setText]= useState('')
+        function changeShowState(){
+        setShow (!show)
+        if(show) setText('')
+        }
+    
     return (
         <>
             <header >
@@ -46,16 +54,40 @@ const Header = () => {
           
         </div>
         
-            <div className="headerRigh">
-                <button className="search" style={{background:'transparent', border:'none', paddingRight:'48px', position:'relative', top:'-22px', fontSize:'35px', color:'white' }}>
+            <div className="headerRigh" style={{display:'flex', alignItems:'center',gap:'8px'}}>
+                <button className="search" style={{background:'transparent', border:'none',  paddingRight:'48px', fontSize:'35px', color:'white' }}>
                    
-                    <img src={search} alt="search" />
-                </button>
-                {/* <img src={avatar} alt="avatar"  width="74" height="74"  /> */}
-                {/* <TrueFalse></TrueFalse> */}
-                <TrueFalse isLogin={true}></TrueFalse>
+                   <img src={search} alt="search" onClick={changeShowState} />
+               </button>
+       
+             {show && (
+               <div style={{display:'flex',position:'relative'}}>
+
+                   <input
+                   type="text"
+                   value ={text}
+                   onChange={(e)=> setText(e.target.value)}
+                   placeholder='Search...'
+                   style={{width:'150px',fontSize:'14px',padding:'4px 8px', position:'absolute',left:'-250px'}}
+                   />
+               
+               {show && text.length >= 3 && 'Stranger thing'. toLowerCase().includes(text.toLowerCase()) && (
+                <div style={{backgroundColor:'white', color:'black',  position:'absolute', left:'-500px'}}>
+                    Stranger thing
+                    </div>
+                )}
+               {/* <img src={avatar} alt="avatar"  width="74" height="74"  /> */}
+               {/* <TrueFalse></TrueFalse> */}
+
+               </div>
+    )}
+         
+        
+               
                 
-            </div>
+                <TrueFalse isLogin={true}></TrueFalse>
+                </div>
+         
                 </div>
      
         </header>
