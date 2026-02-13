@@ -7,7 +7,7 @@ import MyButton from './components/customButton/MyButton.jsx';
 import logo from './assets/netflix.png';
 import Counter from './components/Counter.jsx';
 import ProductList from './components/ProductList.jsx';
-import Cards from './components/Cards.jsx';
+import Cardes from './components/Cards.jsx';
 
 
 
@@ -18,7 +18,7 @@ function App() {
     <>
     <div className="container py-3">
     <Header></Header>
-    <Cards></Cards>
+    <Cardes></Cardes>
     {/* <ProductList></ProductList>
     <Counter></Counter>
     <img src={logo} alt="logo" />

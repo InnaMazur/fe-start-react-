@@ -1,8 +1,8 @@
 import React , {useState} from 'react';
 
-function Cards(props) {
+function Cardes(props) {
 
-       const [cards, setCards] = useState([
+       const [cardes, setCardes] = useState([
                 {
                   title: "Free",
                   price: "$0/mo",
@@ -34,13 +34,13 @@ function Cards(props) {
               ]);
             
               const handleDelete = () => {
-                setCards(cards.filter((card, index) => index !== 0));
+                setCardes(cardes.filter((card, index) => index !== 0));
               };
             
     return (
         <div>
         < div className="row row-cols-1 row-cols-md-3 mb-3 text-center">
-               {cards.map((card, index) => (
+               {cardes.map((card, index) => (
              <div className="col"key={index} > 
            
             <div className="card mb-4 rounded-3 shadow-sm"> 
@@ -77,4 +77,4 @@ function Cards(props) {
     );
 }
 
-export default Cards;
+export default Cardes;

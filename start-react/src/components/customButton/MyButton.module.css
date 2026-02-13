@@ -1,0 +1,9 @@
+.custom{
+    background-color: red;
+    color: white;
+    padding: 20px;
+    margin: 20px;
+}
+.custom:hover{
+    background-color: darkred;
+}
