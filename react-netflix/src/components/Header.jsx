@@ -4,7 +4,7 @@ import avatar from '../assets/avatar.png';
 import search from '../assets/search.svg';
 import NetflixComponent from './NetflixComponent.jsx';
 import TrueFalse from './TrueFalse.jsx';
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 const Header = () => {
     let textValue='About page';
     const headerLeft = {
@@ -32,7 +32,10 @@ const Header = () => {
         setShow (!show)
         if(show) setText('')
         }
-    
+
+        useEffect(()=>{
+            show? console.log('Input is opened'): console.log('Input is closed');
+        },[show]);
     return (
         <>
             <header >
@@ -81,9 +84,6 @@ const Header = () => {
 
                </div>
     )}
-         
-        
-               
                 
                 <TrueFalse isLogin={true}></TrueFalse>
                 </div>
