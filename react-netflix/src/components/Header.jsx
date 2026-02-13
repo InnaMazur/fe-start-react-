@@ -5,6 +5,7 @@ import search from '../assets/search.svg';
 import NetflixComponent from './NetflixComponent.jsx';
 import TrueFalse from './TrueFalse.jsx';
 import {useState, useEffect} from 'react';
+
 const Header = () => {
     let textValue='About page';
     const headerLeft = {
