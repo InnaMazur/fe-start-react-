@@ -1,0 +1,19 @@
+
+.movie-container{
+    margin-bottom: 49px;
+    width: 600px;
+    position: relative;
+    /* margin: 0 auto; */
+}
+.swiper-slider{
+    width: 151px;
+    height: 210px;
+    object-fit: cover;
+    margin-right: 50px;
+}
+.swiper-button-prev{
+    left: 20px !important;
+}
+.swiper-button-next{
+    right:160px !important;
+}

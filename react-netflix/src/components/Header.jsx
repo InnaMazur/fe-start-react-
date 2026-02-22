@@ -1,11 +1,12 @@
 import React  from 'react';
 import logo from '../assets/logo.png';
 import avatar from '../assets/avatar.png';
-import search from '../assets/search.svg';
 import NetflixComponent from './NetflixComponent.jsx';
 import TrueFalse from './TrueFalse.jsx';
 import {useState, useEffect} from 'react';
 import { Link } from 'react-router-dom';
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faMagnifyingGlass} from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
     let textValue='About page';
@@ -66,9 +67,10 @@ const Header = () => {
         </div>
         
             <div className="headerRigh" style={{display:'flex', alignItems:'center',gap:'8px'}}>
-                <button className="search" style={{background:'transparent', border:'none',  paddingRight:'48px', fontSize:'35px', color:'white' }}>
+                <button className="search" onClick={changeShowState} style={{background:'transparent', border:'none',  paddingRight:'48px', fontSize:'35px', color:'white' }}>
                    
-                   <img src={search} alt="search" onClick={changeShowState} />
+                   {/* <img src={search} alt="search" onClick={changeShowState} /> */}
+                   <FontAwesomeIcon icon={faMagnifyingGlass} />
                </button>
        
              {show && (

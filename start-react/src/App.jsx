@@ -1,5 +1,5 @@
 
-import Header from './components/Header.jsx'
+// import Header from './components/Header.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import React, {useState} from 'react';
@@ -7,11 +7,12 @@ import React, {useState} from 'react';
 // import Main from './components/usersOrder/Main.jsx';
 // import Mainhw from './components/hw10/Mainhw.jsx';
 // import CountryTable from './components/CountryTable.jsx';
-import PostTable from './components/PostTable.jsx';
-// import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+// import PostTable from './components/PostTable.jsx';
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 // import HomePage from './pages/HomePage.jsx';
 // import AboutPage from './pages/AboutPage.jsx';
 // import CountryPage from './pages/CountryPage.jsx';
+import AboutPage from './components/AboutPage.jsx';
 
 function App() {
 
@@ -22,20 +23,21 @@ function App() {
 // }
 
         
-      const [selectedPost, setSelectedPost] = useState([]);
-      function selectPost(post){
-        setSelectedPost(selectPost=>[...selectPost,post]);
-      }  
-      function removePost(index){
-        setSelectedPost(selectedPost=>selectedPost.filter((post,i)=>i!==index));
-      }
+      // const [selectedPost, setSelectedPost] = useState([]);
+      // function selectPost(post){
+      //   setSelectedPost(selectPost=>[...selectPost,post]);
+      // }  
+      // function removePost(index){
+      //   setSelectedPost(selectedPost=>selectedPost.filter((post,i)=>i!==index));
+      // }
      
 
   return (
     <>
     <div className="container py-3">
-
-    {/* <Router>
+      <AboutPage></AboutPage>
+{/*  
+     <Router>
       
     <Header></Header>
       <Routes>
@@ -45,7 +47,7 @@ function App() {
 
         </Route>
       </Routes>
-    </Router> */}
+    </Router> 
       <PostTable title='Posts' onSelectPost={selectPost}></PostTable>
       <h1>
         Chosed posts:
@@ -56,7 +58,7 @@ function App() {
          <button className='btn btn-danger' onClick={()=>removePost(index)}>Remove Post</button></li>
         );
 })}
-      </ul>
+      </ul> */}
       {/* <h1>
         Selected countries:
       </h1>
