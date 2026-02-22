@@ -5,6 +5,7 @@ import search from '../assets/search.svg';
 import NetflixComponent from './NetflixComponent.jsx';
 import TrueFalse from './TrueFalse.jsx';
 import {useState, useEffect} from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     let textValue='About page';
@@ -56,6 +57,12 @@ const Header = () => {
           <NetflixComponent text={textValue}></NetflixComponent>
           </span> */}
           
+        </div>
+
+        <div className="headermiddle" style={{display:'flex', alignItems:'center',gap:'8px'}}>
+     <Link className="me-3 py-2 link-body-emphasis text-white text-decoration-none" to='/about'>About</Link>
+     <Link className="me-3 py-2 link-body-emphasis text-white text-decoration-none" to='/price'>Price</Link>
+     <Link className="me-3 py-2 link-body-emphasis text-white text-decoration-none" to='/contact'>Contact</Link>
         </div>
         
             <div className="headerRigh" style={{display:'flex', alignItems:'center',gap:'8px'}}>
