@@ -8,6 +8,10 @@ import React, {useState} from 'react';
 // import Mainhw from './components/hw10/Mainhw.jsx';
 // import CountryTable from './components/CountryTable.jsx';
 import PostTable from './components/PostTable.jsx';
+// import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+// import HomePage from './pages/HomePage.jsx';
+// import AboutPage from './pages/AboutPage.jsx';
+// import CountryPage from './pages/CountryPage.jsx';
 
 function App() {
 
@@ -31,6 +35,17 @@ function App() {
     <>
     <div className="container py-3">
 
+    {/* <Router>
+      
+    <Header></Header>
+      <Routes>
+        <Route path='/'element={<HomePage></HomePage>}></Route>
+        <Route path='/about' element={<AboutPage></AboutPage>}></Route>
+        <Route path='/country' element={<CountryPage></CountryPage>}>
+
+        </Route>
+      </Routes>
+    </Router> */}
       <PostTable title='Posts' onSelectPost={selectPost}></PostTable>
       <h1>
         Chosed posts:
@@ -54,7 +69,7 @@ function App() {
       </ul> */}
       {/* <Mainhw></Mainhw> */}
       {/* <Main></Main> */}
-    {/* <Header></Header> */}
+   
     {/* <CountryTable title='Table of countries' onSelectCountry={selectCountry}></CountryTable> */}
     {/* <RangeRefComponent></RangeRefComponent> */}
     {/* <UseRefComponent title = {propTitle}></UseRefComponent>

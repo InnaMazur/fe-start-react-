@@ -7,7 +7,9 @@ function PostTable({title,onSelectPost}) {
             fetch('https://jsonplaceholder.typicode.com/posts')
             .then(resp=>resp.json())
             .then(data=>setPosts(data.slice(0,visability)))
+            .catch(error=>console.error('Error fetching posts:', error))
         },[visability])
+      
 
         function loadMore(){
             setVisability(visability=>visability+10);
@@ -32,7 +34,7 @@ function PostTable({title,onSelectPost}) {
   <tbody>
     
     {posts.map((post,index)=>{
-        return <tr key={index}>
+        return <tr key={post.id}>
             <td>
                 {post.userId}
                 </td>
