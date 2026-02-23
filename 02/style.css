@@ -1,0 +1,271 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    
+    /* height: 100%; */
+    background-image: url(../06/img/Rectangle\ 1.png);
+    /* margin: 0; */
+background-position: top center;
+background-size: cover;
+background-repeat: no-repeat;
+background-color: black;
+
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+  }
+header{
+    display: flex;
+    align-items: center;
+    padding: 42px 33px 118px 40px;
+    justify-content: space-between;
+    /* margin-top: 35px;
+    margin-bottom: 121px; */
+    
+
+}
+.header-left{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 156px;
+    height: 48px;
+    /* margin-right: 20px; */
+}
+.date{
+    color: rgb(200, 200, 200);
+font-size: 24px;
+/* font-weight: 500; */
+line-height: 29px;
+letter-spacing: 0%;
+padding-left: 34px;
+border-left: 2px solid white;
+margin-left: 48px;
+display: inline-block;
+bottom: 18px;
+font-family: "Big Shoulders Stencil", sans-serif;
+font-optical-sizing: auto;
+font-weight: 400;
+font-style: normal;
+color: white;
+}
+.search{
+    padding-right: 48px;
+    background: transparent;
+    border: none;
+    position: relative;
+    color: white;
+    font-size: 35px;
+    border: none;
+    top: -22px;
+
+}
+.avatar{
+    width: 74px;
+    height: 74px;
+
+}
+main{
+    padding-left: 40px;
+    padding-bottom: 49px;
+max-width: 902px;
+}
+.genre{
+    display: flex;
+    color: white;
+    /* column-gap: 30px; */
+    font-size: 32px;
+    font-weight: 500px;
+    line-height: 39px;
+    letter-spacing: 0;
+    display: flex;
+    text-align: left;
+    
+    
+}
+.genre span{
+    display: inline-block;
+    padding: 1px 18px;
+    border-left: 3px solid white;
+}
+.genre span:first-child{
+    border-left: none;
+    padding-left: 0;
+    
+}
+h1{
+    color: rgb(225, 225, 225);
+    font-size: 64px;
+    font-weight: 800px;
+    line-height: 77px;
+    letter-spacing: 5.5;
+    text-align: left;
+    margin-bottom: 17px;
+    margin-top: 15px;
+
+}
+
+.film-info{
+
+    font-weight: 500;
+    font-size: 30px;
+ letter-spacing: 0;
+ color: white;
+ display: flex;
+ align-items: center;
+ gap: 20px;
+ 
+ 
+ }
+
+ .film-info span{
+    display: inline-block;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 0px;
+color: gray;
+
+}
+.film-info-item{
+    padding-left: 0;
+    padding-right: 20px;
+    border-right: 3px solid white;
+
+
+}
+.film-info-item-2{
+    padding-right: 0;
+    padding-left: 20px;
+    border-left: 3px solid white;
+}
+.description{
+    margin-top: 15px;
+    margin-bottom: 0;
+    color: rgb(167, 166, 166);
+font-size: 24px;
+line-height: 29px;
+letter-spacing: 0%;
+text-align: left;
+width: 864px;
+padding-bottom: 40px;
+}
+.star{
+    display: flex;
+    align-items: center;
+    margin-bottom: 53px;
+
+}
+.filled-star img,
+.line-star img{
+    margin-right: 17px;
+}
+.buttons{
+    margin-bottom: 54px;
+    display: flex;
+}
+
+.stream{
+width: 271px;
+height: 64px;
+border-radius: 10px;
+
+background: rgb(213, 13, 31);
+border: none;
+color: rgb(255, 255, 255);
+font-size: 22px;
+font-weight: 500;
+line-height: 141.52%;
+letter-spacing: 0%;
+box-sizing: border-box;
+
+
+display: flex;
+
+align-items: center;
+justify-content: center;
+gap: 10px;
+text-align: center;
+}
+.stream i{
+    font-size: 28px;
+    display: inline-block;
+}
+.episodes{
+
+width: 271px;
+height: 64px;
+color: rgb(255, 255, 255);
+font-family: Inter;
+font-size: 22px;
+font-weight: 500;
+line-height: 141.52%;
+letter-spacing: 0%;
+margin-left: 90px;
+background: transparent;
+box-sizing: border-box;
+border: 3px solid rgb(255, 255, 255);
+border-radius: 10px;
+
+}
+.choose{
+    display: flex;
+    margin-bottom: 32px;
+    justify-content: space-between;
+    align-items: center;
+    width: 949px;
+}
+.choice{
+    color: rgb(255, 255, 255);
+font-size: 22px;
+font-weight: 800;
+line-height: 144.52%;
+letter-spacing: 13.5%;
+text-align: left;
+}
+.direction{
+    display: flex;
+    gap: 24px;
+}
+.left, .right{
+    width: 41px;
+    height: 41px;
+    background-color: transparent;
+    color: white;
+    border-radius: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.left{
+    border-radius: 100%;
+    border: 2px solid gray;
+    color: gray;
+}
+.right{
+    border: 2px solid white;
+}
+.movies{
+    display: flex;
+    gap: 50px;
+    margin-bottom: 49px;
+    justify-content: space-between;
+    width: 949px;
+}
+.age{
+    position: fixed;
+    bottom: 103px;
+    right: 0;
+    background-color: gray;
+    border-left: 33px solid red;
+    padding: 26px 15px 33px 14px;
+    color: white;
+    font-size: 24px;
+    width: 174px;
+    height: 66px;
+
+}
+

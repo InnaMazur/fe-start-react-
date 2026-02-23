@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 HeaderNav.propTypes = {
     isLogin: PropTypes.bool,
@@ -45,7 +46,10 @@ return  <a  key={index} className="me-3 py-2 link-body-emphasis text-decoration-
 return(
 
 <nav className="d-inline-flex mt-2 mt-md-0 ms-md-auto"> 
-    {linksEl}
+    <Link className="me-3 py-2 link-body-emphasis text-decoration-none" to='/'>Home</Link>
+    <Link className="me-3 py-2 link-body-emphasis text-decoration-none" to='/about'>About</Link>
+    <Link className="me-3 py-2 link-body-emphasis text-decoration-none" to='/country'>Country</Link>
+    {/* {linksEl} */}
 {/* //     <a className="me-3 py-2 link-body-emphasis text-decoration-none" href="#">Features</a> 
 // <a className="me-3 py-2 link-body-emphasis text-decoration-none" href="#">Enterprise</a> 
 // <a className="me-3 py-2 link-body-emphasis text-decoration-none" href="#">Support</a>
