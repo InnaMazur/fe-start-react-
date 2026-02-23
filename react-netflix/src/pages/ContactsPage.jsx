@@ -1,6 +1,6 @@
 import React from 'react';
 
-function ContactPage(props) {
+function ContactsPage(props) {
     const nowYear = new Date().getFullYear();
     let text = `© 2017–${nowYear}`;
     return (
@@ -23,4 +23,4 @@ function ContactPage(props) {
 };
 
 
-export default ContactPage;
+export default ContactsPage;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-function PricePage(props) {
+function PricesPage(props) {
     return (
         <div>
             <h1>Price</h1>
@@ -8,4 +8,4 @@ function PricePage(props) {
     );
 }
 
-export default PricePage;
+export default PricesPage;
