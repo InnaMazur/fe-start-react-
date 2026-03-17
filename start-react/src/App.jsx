@@ -12,7 +12,8 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 // import HomePage from './pages/HomePage.jsx';
 // import AboutPage from './pages/AboutPage.jsx';
 // import CountryPage from './pages/CountryPage.jsx';
-import AboutPage from './components/AboutPage.jsx';
+// import AboutPage from './components/AboutPage.jsx';
+import Clothes from './components/Clothes.jsx';
 
 function App() {
 
@@ -35,7 +36,8 @@ function App() {
   return (
     <>
     <div className="container py-3">
-      <AboutPage></AboutPage>
+      <Clothes></Clothes>
+      {/* <AboutPage></AboutPage> */}
 {/*  
      <Router>
       
